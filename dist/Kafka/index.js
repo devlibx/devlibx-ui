@@ -42,3 +42,29 @@ Object.keys(_KafkaBroker).forEach(function (key) {
     }
   });
 });
+
+var _KafkaAckType = require("./KafkaAckType");
+
+Object.keys(_KafkaAckType).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _KafkaAckType[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _KafkaAckType[key];
+    }
+  });
+});
+
+var _KafkaPartitionCount = require("./KafkaPartitionCount");
+
+Object.keys(_KafkaPartitionCount).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _KafkaPartitionCount[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _KafkaPartitionCount[key];
+    }
+  });
+});
