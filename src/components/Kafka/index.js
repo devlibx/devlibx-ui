@@ -1,3 +1,5 @@
+export * from "./Kafka"
+
 export {
     KafkaTopic,
     KafkaAckType,
