@@ -45,9 +45,20 @@ Point the react in your application project to point to the react module where y
 ```
 
 ---
-# Kafka Broker Input
+# Kafka broker input
+This will show a input to take kafka broker URL.
+1. leftSideTitle - label to show
+2. helpStr       - tooltip for help
 ```javascript
 <KafkaBroker helpStr="You need to pass the broker to use" leftSideTitle="Broker URL"></KafkaBroker>
 ```
-
+#### kafka topic input
+This will show a input to take kafka topic.
+```javascript
+<KafkaTopic 
+    helpStr="Provide your topic name" 
+    leftSideTitle="Kafka Topic" 
+    topic="$INTERNAL_TOPIC"
+/>
+```
 
