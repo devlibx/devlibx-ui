@@ -22,6 +22,7 @@ jobs:
           major-wording:  'MAJOR,cut-major'
           patch-wording:  'patch,fixes'                                           
           rc-wording:     'RELEASE,alpha'
+      - run: nmp install
       - run: npm run build
       - run: npm publish
         env:
