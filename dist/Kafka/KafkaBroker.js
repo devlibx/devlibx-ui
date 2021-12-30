@@ -49,7 +49,7 @@ function KafkaBroker({
     value: broker
   }), /*#__PURE__*/_react.default.createElement(_reactBootstrap.OverlayTrigger, {
     placement: "bottom",
-    overlay: /*#__PURE__*/_react.default.createElement(_reactBootstrap.Tooltip, null, "Tooltip on ", /*#__PURE__*/_react.default.createElement("strong", null, helpStr), ".")
+    overlay: /*#__PURE__*/_react.default.createElement(_reactBootstrap.Tooltip, null, helpStr)
   }, ({ ...triggerHandler
   }) => /*#__PURE__*/_react.default.createElement(_reactBootstrap.Button, _extends({
     variant: "light"

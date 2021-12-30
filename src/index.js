@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Button from './components/Button/Button'
 import KafkaConsumer from './components/Kafka/KafkaConsumer'
 import KafkaBroker from './components/Kafka/KafkaBroker'
+import KafkaTopic from './components/Kafka/kafkaTopic'
 
 ReactDOM.render(
   <React.StrictMode> 
@@ -27,9 +28,11 @@ ReactDOM.render(
         brokers="$INTERNAL_BROKER_URL"
       />
 
-      <KafkaBroker/>
-
-      <KafkaBroker/>
+    <KafkaTopic 
+        helpStr="Provide your topic name" 
+        leftSideTitle="Kafka Topic" 
+        topic="$INTERNAL_TOPIC"
+      />
 
   </React.StrictMode>,
   document.getElementById('root')

@@ -34,7 +34,7 @@ function KafkaBroker({ brokers, helpStr, leftSideTitle }) {
                     placement="bottom" 
                     overlay={
                     <Tooltip >
-                        Tooltip on <strong>{helpStr}</strong>.
+                        {helpStr}
                     </Tooltip>
                     }
                 >
