@@ -1,3 +1,3 @@
-export { default } from "./KafkaConsumer";
-export { default } from "./KafkaProducer";
-export { default } from "./KafkaBroker";
+export * from "./KafkaConsumer";
+export * from "./KafkaProducer";
+export * from "./KafkaBroker";
