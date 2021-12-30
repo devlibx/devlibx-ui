@@ -56,7 +56,7 @@ This will show a input to take kafka broker URL.
 This will show a input to take kafka topic.
 ```javascript
 <KafkaTopic 
-    helpStr="Provide your topic name" 
+    helpStr="Provide your topic name." 
     leftSideTitle="Kafka Topic" 
     topic="$INTERNAL_TOPIC"
 />
