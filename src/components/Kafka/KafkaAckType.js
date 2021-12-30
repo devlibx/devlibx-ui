@@ -1,4 +1,4 @@
-import { InputGroup, FormControl, Button, Tooltip, OverlayTrigger, Image, Popover } from 'react-bootstrap';
+import { InputGroup, FormControl, Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import React, { useState } from 'react';
 

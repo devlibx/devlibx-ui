@@ -1,4 +1,4 @@
-import { InputGroup, FormControl, Button, Tooltip, OverlayTrigger, Image, Popover } from 'react-bootstrap';
+import { InputGroup, FormControl, Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { BsFillInfoCircleFill } from "react-icons/bs";
 import React, { useState, useRef } from 'react';
 
@@ -10,12 +10,12 @@ function KafkaBroker({ brokers, helpStr, leftSideTitle }) {
         // TODO - check if broker value contains correct port GrTooltip
     }
 
-    const popover = (
-        <Popover id="popover-basic">
-          <Popover.Header as="h3">Info</Popover.Header>
-          <Popover.Body>{helpStr}</Popover.Body>
-        </Popover>
-      );
+    // const popover = (
+    //     <Popover id="popover-basic">
+    //       <Popover.Header as="h3">Info</Popover.Header>
+    //       <Popover.Body>{helpStr}</Popover.Body>
+    //     </Popover>
+    // );
 
     return (        
         <div ref={ref}>
