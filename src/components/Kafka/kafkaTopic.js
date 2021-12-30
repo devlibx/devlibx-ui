@@ -41,7 +41,7 @@ function KafkaTopic({ topic, helpStr, leftSideTitle }) {
 
 KafkaTopic.defaultProps = {
     topic: "test_topic",    
-    helpStr: "Plese provide the topic name to use.",
+    helpStr: "Plese provide the topic name to use",
     leftSideTitle: "Topic"
 }
 
