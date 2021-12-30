@@ -19,7 +19,7 @@ npm install --save-dev @babel/preset-react
 
 Also edit ```scripts``` section in package.json 
 ```shell
-    "build": "rm -rf dist && NODE_ENV=production babel src/components --out-dir dist --copy-files"
+"build": "rm -rf dist && NODE_ENV=production babel src/components --out-dir dist --copy-files"
 ```    
 
 We need to build the package and compile JSX to native JS. For that we use ```bable```, here out build command will compile the js file to final files and will push in under ```dist folder```
