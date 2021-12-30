@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Button from './components/Button/Button'
-import KafkaConsumer from './components/Kafka/KafkaConsumer'
 import KafkaBroker from './components/Kafka/KafkaBroker'
 import KafkaTopic from './components/Kafka/kafkaTopic'
+import KafkaConsumerGroup from './components/Kafka/KafkaConsumerGroup'
 
 ReactDOM.render(
   <React.StrictMode> 
@@ -32,6 +31,10 @@ ReactDOM.render(
         helpStr="Provide your topic name" 
         leftSideTitle="Kafka Topic" 
         topic="$INTERNAL_TOPIC"
+      />
+
+    <KafkaConsumerGroup 
+        consumerGroupId="group_id_input"
       />
 
   </React.StrictMode>,
