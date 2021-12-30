@@ -68,3 +68,16 @@ Object.keys(_KafkaPartitionCount).forEach(function (key) {
     }
   });
 });
+
+var _kafkaTopic = require("./kafkaTopic");
+
+Object.keys(_kafkaTopic).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _kafkaTopic[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _kafkaTopic[key];
+    }
+  });
+});
