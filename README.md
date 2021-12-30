@@ -43,3 +43,11 @@ Point the react in your application project to point to the react module where y
     ...
 }
 ```
+
+---
+# Kafka Broker Input
+```javascript
+<KafkaBroker helpStr="You need to pass the broker to use" leftSideTitle="Broker URL"></KafkaBroker>
+```
+
+
