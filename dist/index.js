@@ -16,3 +16,16 @@ Object.keys(_Button).forEach(function (key) {
     }
   });
 });
+
+var _Kafka = require("./Kafka");
+
+Object.keys(_Kafka).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _Kafka[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _Kafka[key];
+    }
+  });
+});

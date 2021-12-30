@@ -30,3 +30,16 @@ Make changes and run following commands
 ```shell
 sh publish.sh
 ```
+
+
+### Common errors
+1. When you install this lib from source code for debug and development, then there are 2 copies of ract used. first from your app, and second from yor lib. This can cause a problem. To void this issue, use the following hack
+
+Point the react in your application project to point to the react module where you have checked-out this project.
+```shell
+"dependencies": {
+    ...
+    "react": "file:../devlibx-ui/node_modules/react",
+    ...
+}
+```
