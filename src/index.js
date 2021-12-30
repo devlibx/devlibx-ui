@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import KafkaBroker from './components/Kafka/KafkaBroker'
-import KafkaTopic from './components/Kafka/kafkaTopic'
+import KafkaTopic from './components/Kafka/KafkaTopic'
 import KafkaConsumerGroup from './components/Kafka/KafkaConsumerGroup'
 import KafkaPartitionCount from './components/Kafka/KafkaPartitionCount'
 import KafkaAckType from './components/Kafka/KafkaAckType'
+import KafkaPublishMessageTimeout from './components/Kafka/KafkaPublishMessageTimeout'
 
 ReactDOM.render(
   <React.StrictMode> 
@@ -38,6 +39,7 @@ ReactDOM.render(
     <KafkaConsumerGroup consumerGroupId="group_id_input"/>
     <KafkaPartitionCount count={11}/>
     <KafkaAckType ack="all"/>
+    <KafkaPublishMessageTimeout timeout={10}></KafkaPublishMessageTimeout>
 
   </React.StrictMode>,
   document.getElementById('root')
