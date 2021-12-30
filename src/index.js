@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import KafkaBroker from './components/Kafka/KafkaBroker'
 import KafkaTopic from './components/Kafka/kafkaTopic'
 import KafkaConsumerGroup from './components/Kafka/KafkaConsumerGroup'
+import KafkaPartitionCount from './components/Kafka/KafkaPartitionCount'
+import KafkaAckType from './components/Kafka/KafkaAckType'
 
 ReactDOM.render(
   <React.StrictMode> 
@@ -33,9 +35,9 @@ ReactDOM.render(
         topic="$INTERNAL_TOPIC"
       />
 
-    <KafkaConsumerGroup 
-        consumerGroupId="group_id_input"
-      />
+    <KafkaConsumerGroup consumerGroupId="group_id_input"/>
+    <KafkaPartitionCount count={11}/>
+    <KafkaAckType ack="all"/>
 
   </React.StrictMode>,
   document.getElementById('root')
