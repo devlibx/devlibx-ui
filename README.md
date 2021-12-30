@@ -62,3 +62,5 @@ This will show a input to take kafka topic.
 />
 ```
 
+#### Version
+v0.4.7
