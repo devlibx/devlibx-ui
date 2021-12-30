@@ -22,7 +22,7 @@ jobs:
         with:
           minor-wording:  'add,Adds,new'
           major-wording:  'MAJOR,cut-major'
-          patch-wording:  'patch,fixes,[+]'                                           
+          patch-wording:  'patch,fixes,[+],minor'                                           
           rc-wording:     'RELEASE,alpha'
       - run: npm publish
         env:
